@@ -1,0 +1,154 @@
+.headerContainer {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: rgb(181, 181, 181);
+    /* height: 120px; */
+    padding: 5px;
+    display: flex;
+    flex-flow: row wrap; 
+    /* justify-content: space-between; */
+}
+
+.encabezado {
+    width: 55%;
+    height: 50%;
+}
+
+.encabezado p {
+    color: black;
+    padding: 4px;
+    font-size: 25px;
+}
+
+.menu1 {
+    width: 45%;
+    height: 50%;
+}
+
+.menu1 p {
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 25px;
+    background-color: rgb(7, 188, 7);
+    color: white;
+    padding: 4px;
+}
+
+.logo {
+    width: 30%;
+    height: 50%;
+    padding-right: 7%;
+}
+
+.logo p {
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 25px;
+    background-color: rgb(0, 0, 199);
+    color: white;
+    padding: 4px;
+}
+
+.menu2 {
+    width: 63%;
+    height: 50%;
+}
+
+.menu2 p {
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 25px;
+    background-color: rgb(80, 5, 5);
+    color: white;
+    padding: 4px;
+}
+
+.containerA1 {
+    height: 300px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerA1 div {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 32%;
+}
+
+.izquierda1 {
+    padding: 5px;
+    font-size: 25px;
+    background-color: rgb(59, 58, 58);
+    color: white;
+}
+
+.centro {
+    padding: 5px;
+    font-size: 25px;
+    background-color: rgb(2, 167, 167);
+    color: white;
+}
+
+.derecha1 {
+    padding: 5px;
+    font-size: 25px;
+    background-color: rgb(227, 146, 54);
+    color: white;
+}
+
+.containerA2 {
+    height: 300px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerA2 div {
+    padding: 5px;
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.izquierda2 {
+    width: 65.7%;
+    background-color: rgb(0, 65, 0);
+    color: white;
+}
+
+.derecha2 {
+    width: 32%;
+    background-color: rgb(139, 60, 0);
+    color: white;
+}
+
+.footerContainer {
+    background-color: rgb(0, 246, 246);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pie {
+    height: 30px;
+    padding: 4px;
+    font-size: 25px;
+    color: white;
+}
+
+
+.elemento {
+    align-self: flex-end;
+    padding-right: 200px;
+}
+
+.elemento p {
+    border: 1px solid black;
+    font-size: 25px;
+    background-color: rgb(2, 2, 81);
+    color: white;
+    padding: 4px;
+    height: 30px;
+}
