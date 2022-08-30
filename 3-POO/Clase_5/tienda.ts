@@ -80,7 +80,7 @@ export default class Tienda {
             console.log(`Ocurrio un ${error.name}: ${error.message}`);            
         }
         return prendas;
-    }
+    }       
 
     public findPrendasXTalle(talle: string): Indumentaria[] {
         let talles: string[] = ['S', 'M', 'L', 'XL'];
@@ -112,6 +112,7 @@ export default class Tienda {
     public imprimirPrendas(prendas: Indumentaria[]): string {
         let texto: string = "";
         prendas.forEach(prenda => {
+            // console.log(prenda);            
             texto += `tipo: ${prenda.getTipo()}, marca: ${prenda.getMarca()}, precio: ${prenda.getPrecio()}, talle: ${prenda.getTalle()}\n`;
         })
         return texto;
