@@ -21,12 +21,12 @@ while (opcion != 'F') {
                 case 'T': {
                     let prendaT: string = rls.question('Ingrese tipo de prenda a buscar: ');
                     let isPrendaT: Indumentaria[] = miTienda.findPrendasXTipo(prendaT);
-                    if (isPrendaT) {                           //SIEMPRE ENTRA POR EL IF, POR MAS QUE SEA FALSO SIEMPRE SE IMPRIME LA SENTENCIA DE ESTE
+                    if (isPrendaT.length > 0) {                           //SIEMPRE ENTRA POR EL IF, POR MAS QUE SEA FALSO SIEMPRE SE IMPRIME LA SENTENCIA DE ESTE
                         console.log(`Se encontró la prenda de tipo ${prendaT} con estas características: ${miTienda.imprimirPrendas(isPrendaT)}`); //NO ME IMPRIME LA PRENDA ENVIADA COMO PARAMETRO
                     } else {
                         console.log(`No se encontró la prenda de tipo: ${prendaT}`);
                     }
-                    break;
+                    break;     
                 }
                 case 'M': {
                     let prendaM: string = rls.question('Ingrese talle de prenda a buscar: ');
@@ -42,8 +42,8 @@ while (opcion != 'F') {
             break;
         }
         case 'U': {
-            let datosPrenda: string = rls.question('Ingrese: tipo, marca, precio, talle - de la prenda a modificar: ');
             let posPrenda: number = rls.question('Ingrese posición de la prenda a actualizar: ');
+            let datosPrenda: string = rls.question('Ingrese: tipo, marca, precio, talle - de la prenda a modificar: ');
             let prenda: string[] = datosPrenda.split(',');
             miTienda.updatePrendas(new Indumentaria(prenda[0], prenda[1], parseInt(prenda[2]), prenda[3]), posPrenda);
             break;

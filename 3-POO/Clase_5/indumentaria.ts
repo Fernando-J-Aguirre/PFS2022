@@ -8,22 +8,22 @@ export default class Indumentaria {
 
     constructor(tipo: string, marca: string, precio: number, talle: string) {
         try {            
-            if (tipo == "") throw new ErrorControlado('El tipo no puede estar vacío');
+            if (tipo.trim() == "") throw new ErrorControlado('El tipo no puede estar vacío');
             this.tipo = tipo;
-            if (marca == "") throw new ErrorControlado('La marca no puede estar vacía');
+            if (marca.trim() == "") throw new ErrorControlado('La marca no puede estar vacía');
             this.marca = marca;
             if (precio < 0) throw new ErrorControlado('El precio no puede ser menor a 0');
             this.precio = precio;
-            // let talles: string[] = ['S', 'L', 'M', 'XL']                  //NO ME FUNCIONA ESTA VALIDACION NI TAMPOCO SIN DECLARAR EL ARREGLO DE TALLES, 
-            // if (talles.indexOf(talle.toUpperCase()) == -1) {             // IF O WHILE(talle != 'S')&&(talle != 'L')....., SIEMPRE SE ATRAPA EL ERROR
-            //     throw new ErrorControlado('El talle no existe, seleccione talle valido: S, L, M o XL');
-            // }
-            this.talle = talle;
+            let talles: string[] = ['S', 'L', 'M', 'XL'];                                                                   
+            if (talles.indexOf(talle.toUpperCase().trim()) == -1) {                                  
+                throw new ErrorControlado('El talle no existe, seleccione talle valido: S, L, M o XL');
+            }
+            this.talle = talle.toUpperCase().trim();
         } catch (error) {
             console.log(`Ocurrio un ${error.name}: ${error.message}`);            
         }
     }
-
+      
     public getTipo(): string {
         return this.tipo;
     }
@@ -55,7 +55,8 @@ export default class Indumentaria {
     }
 
     public setPrecio(precio: number) {
-        try {            
+        try {   
+            if (isNaN(precio)) throw new ErrorControlado('');      
             if (precio < 0) throw new ErrorControlado('El precio no puede ser menor a 0');
         } catch (error) {
             console.log(`Ocurrio un ${error.name}: ${error.message}`);            
@@ -67,5 +68,4 @@ export default class Indumentaria {
         return this.talle;
     }
 
-    // DUDA: EN LOS SET, ESTOY REPITIENDO EL CÓDIGO QUE YA ESTÁ EN EL CONSTRUCTOR, ESTO ES CORRECTO?
 }

@@ -3,4 +3,4 @@ export default class ErrorControlado extends Error {
         super(mensaje);
         this.name = 'Error Controlado';
     }
-}
+}           
