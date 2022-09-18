@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(220, 214, 214);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(67, 48, 24);
+    font-size: 2.4rem;
+    text-shadow: 5px 5px 10px rgb(150, 133, 109);
+}
+
+label {
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 15px;
+}
+
+#fila {
+    margin-right: 50px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+#asiento {
+    border-radius: 5px;
+    margin-left: 10px;
+
+}
+
+#containerBtn {
+    display: flex;
+    justify-content: center;   
+    margin-bottom: 15px; 
+}
+
+#btnReservar {
+    background-color: rgb(7, 162, 162);
+    color: aliceblue;
+    font-weight: bold;
+    padding: 5px 30px 5px 30px;
+    margin: 15px;
+    border: 1px solid black;
+    font-size: 1rem;    
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgb(49, 58, 61);
+    transition: 0.2s;
+}
+
+#btnReservar:hover {
+    background-color: rgb(65, 192, 65);
+    color: white;
+}
+
+#btnReservar:active {
+    background-color: rgb(51, 145, 36);
+    font-weight: bold;
+}
+
+#containerTb {
+    display: flex;
+    justify-content: center;
+}
+
+th {
+    padding: 25px;   
+}
+
+
+tr {
+    background-color: rgb(28, 136, 169);
+    text-align: center;
+}
+
+td {
+    color: white; 
+}
+
+table {
+    border: 1px solid black;
+    font-size: 1.5rem;
+}
+
+.reserva {
+    background-color: red;
+    font-weight: bold;
+}

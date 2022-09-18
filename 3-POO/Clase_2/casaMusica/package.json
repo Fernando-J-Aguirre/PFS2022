@@ -1,0 +1,12 @@
+{
+  "name": "casamusica",
+  "version": "1.0.0",
+  "description": "objetos",
+  "main": "casaMusica.js",
+  "scripts": {
+    "test": "cls && tsc comprandoInstrumentos.ts && node comprandoInstrumentos.js",
+    "test1": "cls && tsc index.ts && node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

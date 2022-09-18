@@ -1,0 +1,2 @@
+Deportiva,Nike,1900,L,
+Deportiva,Adidas,3200,XL,
