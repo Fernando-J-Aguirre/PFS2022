@@ -1,0 +1,11 @@
+{
+  "name": "audio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc sistemaAudio.ts && node sistemaAudio.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

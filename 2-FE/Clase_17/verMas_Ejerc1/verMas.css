@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn {
+    font-size: 25px;
+    width: 150px;
+    background-color: rgb(127, 210, 231);
+    font-weight: bold;
+    padding: 5px;
+    margin-right: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(76, 226, 76);
+    font-size: 23px;
+}
+
+.circulo {
+    background-color: red;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;    
+}
+
+.ocultar {
+    visibility: hidden;
+}
+
+.mostrar {
+    visibility: visible;
+}

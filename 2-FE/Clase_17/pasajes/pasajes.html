@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de pasajes</title>
+    <link rel="stylesheet" href="pasajes.css">
+</head>
+<body>
+    <h1>Venta de pasajes</h1>
+    <form>
+        <label for="fila">Seleccione Fila</label>
+        <input type="number" id="fila" min="0" max="20">
+        <label for="asiento">Seleccione Asiento</label>
+        <input type="number" id="asiento" min="0" max="3">
+    </form>
+    <div id="containerBtn">
+        <button id="btnReservar">Reservar</button>
+    </div>
+    <div id="containerTb">
+        <table>
+            <thead>
+                <th>Fila</th>
+                <th>Ventanilla Izq.</th>
+                <th>Pasillo</th>
+                <th>Ventanilla Der.</th>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+    <p id="libres">Cantidad de asientos disponibles</p>
+    <script src="pasajes.js"></script>
+</body>
+</html>

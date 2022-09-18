@@ -1,0 +1,25 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    width: 400px;
+    background-color: aquamarine;
+}
+h2 {
+    width: 350px;
+    background-color: bisque;
+}
+h3 {
+    width: 300px;
+    background-color: lightpink;
+}
+table {
+    background-color: lightgreen;
+}
+p.ocultar {
+    visibility: hidden;
+}
+p.especial {
+    color: white;
+    background-color:blue;
+}

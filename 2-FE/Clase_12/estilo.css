@@ -1,0 +1,29 @@
+body {
+    background-color: blanchedalmond;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 3rem;
+    background-color: blue;
+    color: white;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(47, 47, 225);
+}
+
+.btn:active {
+    background-color: rgb(1, 74, 1);
+}

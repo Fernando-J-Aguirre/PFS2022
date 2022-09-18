@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(251, 245, 235) !important;
+}
+
+h1 {
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.descripcion {
+    font-size: 1.6rem;
+    color: rgb(217, 101, 0);
+    font-weight: bold;
+}
+
+#contenedorFormulario {
+    background-color: #fbfafa;
+    border-radius: 5px;
+    max-width: 700px;
+    border-top: 1px solid rgb(0, 0, 0); 
+    border-bottom: 1px solid rgb(0, 0, 0); 
+}
+
+#pieDePagina {
+    min-height: 50px; 
+    text-align: center;
+    background-color: rgb(228, 232, 218);
+}
+
+footer p {
+    color: rgb(106, 45, 12);
+    text-align: center;
+}
+
+#iconos {
+    border-left: 1px solid grey;
+    padding-left: 10px;
+}
+
+#iconos img {    
+    max-height: 50px;
+    padding: 5px 5px;
+}

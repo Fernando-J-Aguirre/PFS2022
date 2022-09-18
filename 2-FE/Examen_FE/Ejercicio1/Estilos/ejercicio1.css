@@ -1,0 +1,32 @@
+body {
+    background-color: gray;
+}
+
+#titulos {
+    color: red;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+}
+
+.divCenter {           
+    display: flex;             
+    justify-content: center;      /* Lo agrego para poder centrar la imagen que contiene este div */
+    width: 500px;
+}
+
+.divCenter img {    /* llamo por tag img ya que es la única imagen dentro de la clase .divCenter */
+    width: 300px;
+}

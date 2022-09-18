@@ -1,0 +1,27 @@
+{
+  "name": "clase_19",
+  "version": "1.0.0",
+  "description": "proyecto para la clase 19",
+  "main": "mauri.js",
+  "scripts": {
+    "test": "cls && tsc manejoTexto.ts && node manejoTexto.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Docente-CFL-PFS/PFS2022.git"
+  },
+  "keywords": [
+    "texto",
+    "archivos",
+    "mayusculas"
+  ],
+  "author": "MI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Docente-CFL-PFS/PFS2022/issues"
+  },
+  "homepage": "https://github.com/Docente-CFL-PFS/PFS2022#readme",
+  "devDependencies": {
+    "@types/node": "^18.6.3"
+  }
+}
