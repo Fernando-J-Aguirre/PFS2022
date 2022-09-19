@@ -4,6 +4,7 @@
 1-PB/*/*.js 
 3-POO/*.js
 3-POO/*/*.js
+3-POO/*/*/*.js
 /Material
 /package-lock.json
 /package.json
